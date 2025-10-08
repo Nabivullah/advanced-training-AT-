@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\bin\Debug\net8.0\ADVTraining_2.exe
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\bin\Debug\net8.0\ADVTraining_2.deps.json
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\bin\Debug\net8.0\ADVTraining_2.runtimeconfig.json
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\bin\Debug\net8.0\ADVTraining_2.dll
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\bin\Debug\net8.0\ADVTraining_2.pdb
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.sourcelink.json
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.dll
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\refint\ADVTraining_2.dll
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.pdb
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ADVTraining_2.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Basic-Training\.NET\ADVTraining_2\obj\Debug\net8.0\ref\ADVTraining_2.dll
