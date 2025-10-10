@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\bin\Debug\net8.0\CS.2.015.exe
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\bin\Debug\net8.0\CS.2.015.deps.json
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\bin\Debug\net8.0\CS.2.015.runtimeconfig.json
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\bin\Debug\net8.0\CS.2.015.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\bin\Debug\net8.0\CS.2.015.pdb
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.sourcelink.json
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\refint\CS.2.015.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.pdb
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\CS.2.015.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.2.015\obj\Debug\net8.0\ref\CS.2.015.dll
