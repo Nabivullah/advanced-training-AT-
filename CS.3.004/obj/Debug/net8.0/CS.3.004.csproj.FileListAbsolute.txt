@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\bin\Debug\net8.0\CS.3.004.exe
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\bin\Debug\net8.0\CS.3.004.deps.json
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\bin\Debug\net8.0\CS.3.004.runtimeconfig.json
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\bin\Debug\net8.0\CS.3.004.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\bin\Debug\net8.0\CS.3.004.pdb
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.sourcelink.json
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\refint\CS.3.004.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.pdb
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\CS.3.004.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.3.004\obj\Debug\net8.0\ref\CS.3.004.dll
