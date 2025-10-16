@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\bin\Debug\net8.0\CS.1.006.exe
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\bin\Debug\net8.0\CS.1.006.deps.json
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\bin\Debug\net8.0\CS.1.006.runtimeconfig.json
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\bin\Debug\net8.0\CS.1.006.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\bin\Debug\net8.0\CS.1.006.pdb
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.sourcelink.json
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\refint\CS.1.006.dll
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.pdb
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\CS.1.006.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Advanced Training\CS.1.006\obj\Debug\net8.0\ref\CS.1.006.dll
