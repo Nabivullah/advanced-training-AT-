@@ -1,0 +1,320 @@
+﻿
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<!-- ✅ Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary"><i class="bi bi-book"></i> Course Management</h2>
+        <div>
+            <button id="addCourseBtn" class="btn btn-success me-2">
+                <i class="bi bi-plus-circle"></i> Add Course
+            </button>
+            <button id="loadCourseBtn" class="btn btn-primary me-2">
+                <i class="bi bi-arrow-clockwise"></i> Load Courses
+            </button>
+        </div>
+    </div>
+
+    <div class="card shadow-lg p-4">
+        <div class="d-flex align-items-center">
+            <label class="me-2 fw-semibold text-secondary mb-4">Filter by Name:</label>
+            <select id="courseDropdown" class="form-select mb-4" style="width: 200px;">
+                <option value="">-- Select Course --</option>
+            </select>
+        </div>
+        <div id="courses" class="table-responsive text-center">
+            <p class="text-muted">Click "Load Courses" to view course data.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Add/Edit Course Modal -->
+<div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="courseModalLabel"><i class="bi bi-plus-circle"></i> Add Course</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="courseForm">
+                    <input type="hidden" id="courseId" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Course Code</label>
+                        <input type="text" id="courseCode" class="form-control" placeholder="Enter course code" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Course Name</label>
+                        <input type="text" id="courseName" class="form-control" placeholder="Enter course name" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Department</label>
+                        <input type="text" id="department" class="form-control" placeholder="Enter department" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Semester</label>
+                        <input type="number" id="semester" class="form-control" placeholder="Enter semester number" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-save"></i> Save Course
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ jQuery + Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let courseData = [];
+    let currentPage = 1;
+    const pageSize = 5;
+
+    // ✅ Load Courses
+    $("#loadCourseBtn").click(function () {
+        const token = localStorage.getItem("jwtToken");
+        if (!token) {
+            alert("Please login first!");
+            window.location.href = "/Auth/Login";
+            return;
+        }
+
+        $("#courses").html(`
+            <div class="text-center my-4">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-2 text-primary">Loading course data...</p>
+            </div>
+        `);
+
+        $.ajax({
+            url: "https://localhost:7108/api/Course/GetAll",
+            type: "GET",
+            headers: { "Authorization": "Bearer " + token },
+            success: function (data) {
+                courseData = data;
+                populateDropdown(data);
+                currentPage = 1;
+                renderCourseTable();
+            },
+            error: function (xhr) {
+                if (xhr.status === 401) {
+                    $("#courses").html("<p class='text-danger'>Unauthorized. Please Login Again.</p>");
+                } else {
+                    $("#courses").html("<p class='text-danger'>Error loading courses.</p>");
+                }
+                console.error(xhr);
+            }
+        });
+    });
+
+    // ✅ Populate Dropdown
+    function populateDropdown(data) {
+        let options = "<option value=''>-- Select Course --</option>";
+        data.forEach(c => {
+            options += `<option value='${c.courseName}'>${c.courseName}</option>`;
+        });
+        $("#courseDropdown").html(options);
+    }
+
+    // ✅ Filter by Name
+    $("#courseDropdown").change(function () {
+        const name = $(this).val();
+        if (!name) {
+            currentPage = 1;
+            renderCourseTable();
+            return;
+        }
+
+        const token = localStorage.getItem("jwtToken");
+
+        $.ajax({
+            url: `https://localhost:7108/api/Course/GetByName/${encodedURIComponent(name)}`,
+            type: "GET",
+            headers: { "Authorization": "Bearer " + token },
+            success: function (data) {
+                courseData = Array.isArray(data) ? data : [data];
+                currentPage = 1;
+                renderCourseTable();
+            },
+            error: function () {
+                $("#courses").html("<p class='text-danger'>No course found with that name.</p>");
+            }
+        });
+    });
+
+    // ✅ Render Table
+    function renderCourseTable() {
+        if (!courseData || courseData.length === 0) {
+            $("#courses").html("<p class='text-muted'>No courses found.</p>");
+            return;
+        }
+
+        const totalPages = Math.ceil(courseData.length / pageSize);
+        const start = (currentPage - 1) * pageSize;
+        const end = start + pageSize;
+        const paginatedData = courseData.slice(start, end);
+
+        let html = `
+            <table class="table table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Semester</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+
+        paginatedData.forEach(c => {
+            html += `
+                <tr>
+                    <td>${c.courseId}</td>
+                    <td>${c.courseCode}</td>
+                    <td>${c.courseName}</td>
+                    <td>${c.department ?? "<i class='text-muted'>N/A</i>"}</td>
+                    <td>${c.semester ?? "<i class='text-muted'>N/A</i>"}</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning edit-course-btn" data-id="${c.courseId}">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button class="btn btn-sm btn-danger delete-course-btn" data-id="${c.courseId}">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>`;
+        });
+
+        html += `
+                </tbody>
+            </table>
+            <div class='d-flex justify-content-between align-items-center mt-3'>
+                <button class='btn btn-outline-primary btn-sm' id='prevPage' ${currentPage === 1 ? "disabled" : ""}>
+                    <i class='bi bi-arrow-left'></i> Previous
+                </button>
+                <span class='fw-semibold text-secondary'>Page ${currentPage} of ${totalPages}</span>
+                <button class='btn btn-outline-primary btn-sm' id='nextPage' ${currentPage === totalPages ? "disabled" : ""}>
+                    Next <i class='bi bi-arrow-right'></i>
+                </button>
+            </div>`;
+
+        $("#courses").html(html);
+
+        $("#prevPage").click(() => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderCourseTable();
+            }
+        });
+
+        $("#nextPage").click(() => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderCourseTable();
+            }
+        });
+    }
+
+    // ✅ Add Course Modal
+    $("#addCourseBtn").click(function () {
+        $("#courseForm")[0].reset();
+        $("#courseId").val('');
+        $("#courseModalLabel").html('<i class="bi bi-plus-circle"></i> Add Course');
+        $("#courseModal").modal("show");
+    });
+
+    // ✅ Edit Course
+    $(document).on("click", ".edit-course-btn", function () {
+        const id = $(this).data("id");
+        const c = courseData.find(co => co.courseId === id);
+        if (c) {
+            $("#courseModalLabel").html('<i class="bi bi-pencil-square"></i> Edit Course');
+            $("#courseId").val(c.courseId);
+            $("#courseCode").val(c.courseCode);
+            $("#courseName").val(c.courseName);
+            $("#department").val(c.department);
+            $("#semester").val(c.semester);
+            $("#courseModal").modal("show");
+        }
+    });
+
+    // ✅ Save Course (Add/Edit)
+    $("#courseForm").submit(function (e) {
+        e.preventDefault();
+        const token = localStorage.getItem("jwtToken");
+        if (!token) {
+            alert("Please login first!");
+            window.location.href = "/Auth/Login";
+            return;
+        }
+
+        const course = {
+            courseId: parseInt($("#courseId").val()) || 0,
+            courseCode: $("#courseCode").val(),
+            courseName: $("#courseName").val(),
+            department: $("#department").val(),
+            semester: parseInt($("#semester").val()) || null
+        };
+
+        const isEdit = course.courseId > 0;
+        const apiUrl = isEdit
+            ? `https://localhost:7108/api/Course/Update/${course.courseId}`
+            : "https://localhost:7108/api/Course/Add";
+
+        $.ajax({
+            url: apiUrl,
+            type: isEdit ? "PUT" : "POST",
+            headers: { "Authorization": "Bearer " + token },
+            contentType: "application/json",
+            data: JSON.stringify(course),
+            success: function () {
+                $("#courseModal").modal("hide");
+                $("#loadCourseBtn").click();
+            },
+            error: function (xhr) {
+                alert("❌ Error saving course. Check console for details.");
+                console.error(xhr);
+            }
+        });
+    });
+
+    // ✅ Delete Course
+    $(document).on("click", ".delete-course-btn", function () {
+        const id = $(this).data("id");
+        const token = localStorage.getItem("jwtToken");
+        if (!confirm("Are you sure you want to delete this course?")) return;
+
+        $.ajax({
+            url: `https://localhost:7108/api/Course/Delete/${id}`,
+            type: "DELETE",
+            headers: { "Authorization": "Bearer " + token },
+            success: function () {
+                $("#loadCourseBtn").click();
+            },
+            error: function (xhr) {
+                alert("❌ Error deleting course.");
+                console.error(xhr);
+            }
+        });
+    });
+</script>
+

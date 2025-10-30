@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepodatabaseview\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F009F4B-027D-4CB8-BC56-1D937EE9F2AB}|CollegeRepoDataBaseView.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1104,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:59:56.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T10:32:54.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:32:31.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T10:51:19.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "Views\\Course\\Index.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAiwJEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T06:27:11.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwFEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T05:31:53.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:00:38.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:26:55.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T06:23:16.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T05:31:45.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepoDataBaseView\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:32:19.579Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

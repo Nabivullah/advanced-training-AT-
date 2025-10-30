@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = ViewData["Title"] ?? "CollegeRepoDataBaseView";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CollegeRepoDataBaseView.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    CollegeRepoDataBaseView
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul id="navbar-links" class="navbar-nav flex-grow-1">
+                        <!-- Visible only when logged in -->
+                        <li id="nav-student" class="nav-item d-none">
+                            <a class="nav-link text-dark" asp-controller="Student" asp-action="Index">Students</a>
+                        </li>
+                        <li id="nav-course" class="nav-item d-none">
+                            <a class="nav-link text-dark" asp-controller="Course" asp-action="Index">Courses</a>
+                        </li>
+
+                        <!-- Visible only when logged OUT -->
+                        <li id="nav-login" class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">Login</a>
+                        </li>
+
+                        <!-- Visible only when logged IN -->
+                        <li id="nav-logout" class="nav-item d-none">
+                            <a class="nav-link text-dark" href="#" onclick="logout()">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - CollegeRepoDataBaseView -
+            <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- ✅ Navbar visibility logic based on JWT token -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const token = localStorage.getItem("jwtToken");
+
+            if (token) {
+                // Logged in
+                document.getElementById("nav-student").classList.remove("d-none");
+                document.getElementById("nav-course").classList.remove("d-none");
+                document.getElementById("nav-logout").classList.remove("d-none");
+                document.getElementById("nav-login").classList.add("d-none");
+            } else {
+                // Logged out
+                document.getElementById("nav-student").classList.add("d-none");
+                document.getElementById("nav-course").classList.add("d-none");
+                document.getElementById("nav-logout").classList.add("d-none");
+                document.getElementById("nav-login").classList.remove("d-none");
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem("jwtToken");
+            window.location.href = "/Auth/Login";
+        }
+    </script>
+</body>
+</html>
