@@ -9,7 +9,7 @@
 
 <div class="container my-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="text-primary"><i class="bi bi-mortarboard"></i> Student Management</h2>
+        <h2 class="text-primary"><i class="bi bi-mortarboard"></i> Student and Course Management</h2>
         <div>
             <button id="addStudentBtn" class="btn btn-success me-2">
                 <i class="bi bi-person-plus"></i> Add Student
@@ -169,7 +169,7 @@
         const token = localStorage.getItem("jwtToken");
 
         $.ajax({
-            url: `https://localhost:7108/api/Student/GetByName/${name}`,
+            url: `https://localhost:7108/api/Student/GetByName/${encodeURIComponent(name)}`,
             type: "GET",
             headers: { "Authorization": "Bearer " + token },
             success: function (data) {

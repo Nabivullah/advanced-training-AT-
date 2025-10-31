@@ -1,49 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\models\\newcollegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\newcollegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\repository\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:repository\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\repository\\istudentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:repository\\istudentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject\\collegerepositorydatabase\\collegerepositorydatabase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\repository\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:repository\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\models\\newcollegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\newcollegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\repository\\istudentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:repository\\istudentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|c:\\users\\admin\\desktop\\advanced training\\collegerepoproject - copy\\collegerepositorydatabase\\collegerepositorydatabase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4752DA55-697A-4414-8831-A19466A23E30}|CollegeRepositoryDataBase.csproj|solutionrelative:collegerepositorydatabase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -64,121 +68,128 @@
         },
         {
           "DockedWidth": 1248,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Controllers\\CourseController.cs*",
-              "RelativeToolTip": "Controllers\\CourseController.cs*",
-              "ViewState": "AgIAADUAAAAAAAAAAAAqwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:40:44.987Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "Models\\Course.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Models\\Course.cs",
-              "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:02:53.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NewCollegeDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Models\\NewCollegeDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\NewCollegeDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Models\\NewCollegeDbContext.cs",
-              "RelativeToolTip": "Models\\NewCollegeDbContext.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:02:47.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Repository\\StudentRepo.cs",
-              "RelativeDocumentMoniker": "Repository\\StudentRepo.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Repository\\StudentRepo.cs",
-              "RelativeToolTip": "Repository\\StudentRepo.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:03:24.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:40:28.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:02:55.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAswD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T09:40:59.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAHQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T10:07:15.546Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Repository\\StudentRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\StudentRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Repository\\StudentRepo.cs",
+              "RelativeToolTip": "Repository\\StudentRepo.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:03:24.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:40:44.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewCollegeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\NewCollegeDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\NewCollegeDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\NewCollegeDbContext.cs",
+              "RelativeToolTip": "Models\\NewCollegeDbContext.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAcwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:02:47.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwDAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:40:59.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:40:28.886Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T08:44:12.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:02:55.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T09:02:53.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IstudentRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Repository\\IstudentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Repository\\IstudentRepo.cs",
               "RelativeDocumentMoniker": "Repository\\IstudentRepo.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\Repository\\IstudentRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\Repository\\IstudentRepo.cs",
               "RelativeToolTip": "Repository\\IstudentRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,11 +197,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -198,11 +209,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CollegeRepositoryDataBase.csproj",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\CollegeRepositoryDataBase.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\CollegeRepositoryDataBase.csproj",
               "RelativeDocumentMoniker": "CollegeRepositoryDataBase.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject\\CollegeRepositoryDataBase\\CollegeRepositoryDataBase.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Advanced Training\\CollegeRepoProject - Copy\\CollegeRepositoryDataBase\\CollegeRepositoryDataBase.csproj",
               "RelativeToolTip": "CollegeRepositoryDataBase.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

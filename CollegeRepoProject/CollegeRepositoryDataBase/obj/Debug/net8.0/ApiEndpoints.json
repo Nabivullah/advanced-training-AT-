@@ -103,7 +103,7 @@
         "IsRequired": true
       },
       {
-        "Name": "course",
+        "Name": "student",
         "Type": "CollegeRepositoryDataBase.Models.Course",
         "IsRequired": true
       }

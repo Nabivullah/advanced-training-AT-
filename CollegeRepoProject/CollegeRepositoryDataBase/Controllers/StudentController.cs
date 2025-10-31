@@ -6,7 +6,6 @@ namespace CollegeRepositoryDataBase.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
     public class StudentController : ControllerBase
     {
         private readonly IstudentRepo<Models.Student> _studentRepo;
@@ -16,7 +15,7 @@ namespace CollegeRepositoryDataBase.Controllers
             _studentRepo = studentRepo;
         }
 
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllStudents()
         {
@@ -24,6 +23,8 @@ namespace CollegeRepositoryDataBase.Controllers
             return Ok(students);
         }
 
+
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("GetById/{id}")]
         public async Task<IActionResult> GetStudentById(int id)
         {
@@ -34,6 +35,7 @@ namespace CollegeRepositoryDataBase.Controllers
             return Ok(student);
         }
 
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("GetByName/{name}")]
         public async Task<IActionResult> GetStudentByName(string name)
         {
@@ -44,6 +46,8 @@ namespace CollegeRepositoryDataBase.Controllers
             return Ok(student);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpPost("Add")]
         public async Task<IActionResult> AddStudent([FromBody] Models.Student student)
         {
@@ -54,6 +58,8 @@ namespace CollegeRepositoryDataBase.Controllers
             return Ok(addedStudent);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpPut("Update/{id}")]
         public async Task<IActionResult> UpdateStudent(int id, [FromBody] Models.Student student)
         {
@@ -67,6 +73,8 @@ namespace CollegeRepositoryDataBase.Controllers
             return Ok(updatedStudent);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteStudent(int id)
         {

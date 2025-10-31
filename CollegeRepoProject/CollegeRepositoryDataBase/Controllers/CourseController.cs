@@ -1,13 +1,11 @@
-﻿using CollegeRepositoryDataBase.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 using CollegeRepositoryDataBase.Repository;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CollegeRepositoryDataBase.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
     public class CourseController : ControllerBase
     {
         private readonly IstudentRepo<Models.Course> _courseRepo;
@@ -16,14 +14,14 @@ namespace CollegeRepositoryDataBase.Controllers
         {
             _courseRepo = courseRepo;
         }
-
+        [Authorize(Roles ="Admin,User")]
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllStudents()
         {
             var students = await _courseRepo.GetAllAsync();
             return Ok(students);
         }
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("GetById/{id}")]
         public async Task<IActionResult> GetStudentById(int id)
         {
@@ -33,7 +31,7 @@ namespace CollegeRepositoryDataBase.Controllers
 
             return Ok(student);
         }
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("GetByName/{name}")]
         public async Task<IActionResult> GetCourseByName(string name)
         {
@@ -43,7 +41,7 @@ namespace CollegeRepositoryDataBase.Controllers
 
             return Ok(student);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost("Add")]
         public async Task<IActionResult> AddStudent([FromBody] Models.Course student)
         {
@@ -54,22 +52,23 @@ namespace CollegeRepositoryDataBase.Controllers
             return Ok(addedStudent);
         }
 
-
+        [Authorize(Roles = "Admin")]
         [HttpPut("Update/{id}")]
-        public async Task<IActionResult> UpdateStudent(int id, [FromBody] Models.Course course)
+        public async Task<IActionResult> UpdateStudent(int id, [FromBody] Models.Course student)
         {
-            if (course == null || id != course.CourseId)
+            if (student == null || id != student.CourseId)
                 return BadRequest("Course ID mismatch.");
 
-            course.Students = null; // ✅ Prevent EF tracking issues
-
-            var updatedCourse = await _courseRepo.UpdateAsync(id, course);
-            if (updatedCourse == null)
+            var updatedStudent = await _courseRepo.UpdateAsync(id,student);
+            if (updatedStudent == null)
                 return NotFound($"Course with ID {id} not found.");
 
-            return Ok(updatedCourse);
+            return Ok(updatedStudent);
         }
 
+
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteStudent(int id)
         {

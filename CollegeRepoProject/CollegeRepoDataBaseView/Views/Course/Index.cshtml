@@ -144,7 +144,7 @@
         const token = localStorage.getItem("jwtToken");
 
         $.ajax({
-            url: `https://localhost:7108/api/Course/GetByName/${encodedURIComponent(name)}`,
+            url: `https://localhost:7108/api/Course/GetByName/${encodeURIComponent(name)}`,
             type: "GET",
             headers: { "Authorization": "Bearer " + token },
             success: function (data) {

@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CollegeRepositoryDataBase.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -12,25 +14,42 @@ namespace collage_app.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly NewCollegeDbContext _context;
 
-        public AuthController(IConfiguration configuration)
+        public AuthController(IConfiguration configuration, NewCollegeDbContext context)
         {
             _configuration = configuration;
+            _context = context;
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginModel user)
+        public async Task<IActionResult> Login([FromBody] LoginModel user)
         {
             // 🔹 Dummy user validation
-            if (user.Username == "admin" && user.Password == "admin123")
+            //if (user.Username == "admin" && user.Password == "admin123")
+            //{
+            //    var token = GenerateJwtToken(user.Username);
+            //    return Ok(new { token });
+            //}
+            //return Unauthorized("Invalid credentials");
+
+            if (user == null || string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Password))
+                return BadRequest("Username and password are required.");
+
+            var existingUser = await _context.Users.FirstOrDefaultAsync(u=>u.Username == user.Username && u.Password==user.Password);
+            if (existingUser == null)
             {
-                var token = GenerateJwtToken(user.Username);
-                return Ok(new { token });
+                return Unauthorized("Invalid Username or Password");
             }
-            return Unauthorized("Invalid credentials");
+
+            var token=GenerateJwtToken(existingUser.Username,existingUser.Role);
+            return Ok(new {
+                username = existingUser.Username,
+                role = existingUser.Role,
+                token });
         }
 
-        private string GenerateJwtToken(string username)
+        private string GenerateJwtToken(string username, string role)
         {
             var jwtSettings = _configuration.GetSection("Jwt");
             var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
@@ -40,7 +59,7 @@ namespace collage_app.Controllers
                 Subject = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.Name, username),
-                    new Claim(ClaimTypes.Role, "admin") // optional role
+                    new Claim(ClaimTypes.Role, role) 
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(Convert.ToDouble(jwtSettings["DurationInMinutes"])),
                 Issuer = jwtSettings["Issuer"],

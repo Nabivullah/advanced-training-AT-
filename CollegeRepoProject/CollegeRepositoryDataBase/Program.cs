@@ -39,8 +39,11 @@ namespace CollegeRepositoryDataBase
                 options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDB"));
             });
 
+            builder.Services.AddScoped<IstudentRepo<Student>, StudentRepo<Student>>();
+            builder.Services.AddScoped<IstudentRepo<Course>, StudentRepo<Course>>();
+            //builder.Services.AddScoped<IstudentRepo<User>, StudentRepo<User>>();
 
-            
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -51,9 +54,9 @@ namespace CollegeRepositoryDataBase
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Employee Management API",
+                    Title = "College Management API",
                     Version = "v1",
-                    Description = "Employee Management API with JWT Authentication"
+                    Description = "College Management API with JWT Authentication and Role-Based Access"
                 });
 
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -82,8 +85,6 @@ namespace CollegeRepositoryDataBase
                 });
             });
 
-            builder.Services.AddScoped<IstudentRepo<Student>, StudentRepo<Student>>();
-            builder.Services.AddScoped<IstudentRepo<Course>, StudentRepo<Course>>();
 
             var jwtSettings = builder.Configuration.GetSection("Jwt");
             var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
@@ -107,6 +108,12 @@ namespace CollegeRepositoryDataBase
                     ValidAudience = jwtSettings["Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
+            });
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireRole("admin"));
+                options.AddPolicy("UserOnly", policy => policy.RequireRole("user"));
             });
 
 

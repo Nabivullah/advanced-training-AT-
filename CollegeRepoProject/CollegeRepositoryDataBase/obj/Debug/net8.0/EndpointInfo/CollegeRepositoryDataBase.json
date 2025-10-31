@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Employee Management API",
-    "description": "Employee Management API with JWT Authentication",
+    "title": "College Management API",
+    "description": "College Management API with JWT Authentication and Role-Based Access",
     "version": "v1"
   },
   "paths": {

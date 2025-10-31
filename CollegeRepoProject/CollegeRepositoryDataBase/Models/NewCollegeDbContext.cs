@@ -19,6 +19,8 @@ public partial class NewCollegeDbContext : DbContext
 
     public virtual DbSet<Student> Students { get; set; }
 
+    public virtual DbSet<User> Users { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Data Source=DESKTOP-N2FDSD9\\SQLEXPRESS;Initial Catalog=NewCollegeDB;Integrated Security=True;Trust Server Certificate=True");
@@ -56,6 +58,23 @@ public partial class NewCollegeDbContext : DbContext
             entity.HasOne(d => d.Course).WithMany(p => p.Students)
                 .HasForeignKey(d => d.CourseId)
                 .HasConstraintName("FK__Student__CourseI__4D94879B");
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasKey(e => e.UserId).HasName("PK__users__1788CC4CC0DAA1E5");
+
+            entity.ToTable("users");
+
+            entity.Property(e => e.Password)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.Role)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.Username)
+                .HasMaxLength(50)
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

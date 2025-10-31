@@ -56,20 +56,16 @@ namespace CollegeRepositoryDataBase.Repository
 
         public async Task<T> GetByNameAsync(string name)
         {
-            //return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "Name") == name);
-            // Check if this entity type has a "CourseName" property
-            var entityType = typeof(T);
-            var courseNameProp = entityType.GetProperty("CourseName");
+            var entityType = _context.Model.FindEntityType(typeof(T));
+            var nameProperty = entityType.FindProperty("Name") ?? entityType.FindProperty("CourseName");
 
-            if (courseNameProp != null)
-            {
-                return await _context.Set<T>()
-                    .FirstOrDefaultAsync(e => EF.Property<string>(e, "CourseName").ToLower().Trim() == name.ToLower().Trim());
-            }
+            if (nameProperty == null)
+                throw new InvalidOperationException($"Entity {typeof(T).Name} does not contain a 'Name' or 'CourseName' property.");
 
-            // Fallback for entities that actually have "Name"
+            string propertyName = nameProperty.Name;
+
             return await _context.Set<T>()
-                .FirstOrDefaultAsync(e => EF.Property<string>(e, "Name").ToLower().Trim() == name.ToLower().Trim());
+                .FirstOrDefaultAsync(e => EF.Property<string>(e, propertyName) == name);
         }
     }
 }
